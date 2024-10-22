@@ -26,3 +26,58 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+#lista section {
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lista h4 {
+    font-weight: 700;
+}
+
+#lista section p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.281);
+    font-weight: 400;
+
+}
+
+svg{
+    height: 20px;
+    width: 20px;
+}
+
+#modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo para cubrir toda la pantalla */
+    z-index: 100; /* Asegúrate de que esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa el 100% del ancho */
+    height: 100%; /* Ocupa el 100% de la altura */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+    color: white; /* Texto en blanco */
+    padding: 20px; /* Espaciado interno */
+    overflow: auto; /* Desplazamiento si el contenido es grande */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .modal {
+    display:inline;
+    background-color: rgb(44, 44, 44); /* Fondo del modal */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    z-index: 101; /* Asegúrate de que esté encima del fondo */
+    height: auto; /* Ajusta la altura al contenido */
+    width: 50%; /* Puedes ajustar el ancho como desees */
+    max-height: 80%; /* Limitar la altura máxima */
+    overflow-y: auto; /* Desplazamiento vertical si el contenido es grande */
+  }
+  
